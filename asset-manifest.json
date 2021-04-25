@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/gorillaUX/static/css/main.6215c425.chunk.css",
-    "main.js": "/gorillaUX/static/js/main.a767d26b.chunk.js",
-    "main.js.map": "/gorillaUX/static/js/main.a767d26b.chunk.js.map",
-    "runtime-main.js": "/gorillaUX/static/js/runtime-main.e1deb183.js",
-    "runtime-main.js.map": "/gorillaUX/static/js/runtime-main.e1deb183.js.map",
+    "main.css": "/gorillaUX/static/css/main.1b4fd381.chunk.css",
+    "main.js": "/gorillaUX/static/js/main.288d2f3a.chunk.js",
+    "main.js.map": "/gorillaUX/static/js/main.288d2f3a.chunk.js.map",
+    "runtime-main.js": "/gorillaUX/static/js/runtime-main.bc4dad6d.js",
+    "runtime-main.js.map": "/gorillaUX/static/js/runtime-main.bc4dad6d.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/gorillaUX/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e5bf3591.chunk.js": "/gorillaUX/static/js/2.e5bf3591.chunk.js",
-    "static/js/2.e5bf3591.chunk.js.map": "/gorillaUX/static/js/2.e5bf3591.chunk.js.map",
-    "static/js/3.ab2f8e29.chunk.js": "/gorillaUX/static/js/3.ab2f8e29.chunk.js",
-    "static/js/3.ab2f8e29.chunk.js.map": "/gorillaUX/static/js/3.ab2f8e29.chunk.js.map",
-    "index.html": "/gorillaux/index.html",
+    "static/js/2.359ebc39.chunk.js": "/gorillaUX/static/js/2.359ebc39.chunk.js",
+    "static/js/2.359ebc39.chunk.js.map": "/gorillaUX/static/js/2.359ebc39.chunk.js.map",
+    "static/js/3.ca839b87.chunk.js": "/gorillaUX/static/js/3.ca839b87.chunk.js",
+    "static/js/3.ca839b87.chunk.js.map": "/gorillaUX/static/js/3.ca839b87.chunk.js.map",
+    "index.html": "/gorillaUX/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/gorillaUX/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.6215c425.chunk.css.map": "/gorillaUX/static/css/main.6215c425.chunk.css.map",
-    "static/js/2.e5bf3591.chunk.js.LICENSE.txt": "/gorillaUX/static/js/2.e5bf3591.chunk.js.LICENSE.txt",
+    "static/css/main.1b4fd381.chunk.css.map": "/gorillaUX/static/css/main.1b4fd381.chunk.css.map",
+    "static/js/2.359ebc39.chunk.js.LICENSE.txt": "/gorillaUX/static/js/2.359ebc39.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/gorillaUX/static/media/logo.6ce24c58.svg",
     "static/media/logo.fb619b42.png": "/gorillaUX/static/media/logo.fb619b42.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.e1deb183.js",
+    "static/js/runtime-main.bc4dad6d.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e5bf3591.chunk.js",
-    "static/css/main.6215c425.chunk.css",
-    "static/js/main.a767d26b.chunk.js"
+    "static/js/2.359ebc39.chunk.js",
+    "static/css/main.1b4fd381.chunk.css",
+    "static/js/main.288d2f3a.chunk.js"
   ]
 }
