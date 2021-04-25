@@ -3,6 +3,7 @@ import { Container } from 'reactstrap';
 import ProductForm from '../components/ProductForm';
 import ProductTable from '../components/ProductTable';
 import Axios from 'axios';
+import Header from '../components/Header'
 
 const AddProducts = (props) => {
     const [productList, updateList] = useState([])
@@ -23,13 +24,13 @@ const AddProducts = (props) => {
     }
     const storeProduct = async (data) => {
         let newProduct = []
-        if ( data.image !== null) {
+        if (data.image !== null) {
             let imageFile = new FormData()
             imageFile.append("file", data.image)
             imageFile.append("upload_preset", "fadeniyi")
             const uploadedImage = await Axios.post("https://api.cloudinary.com/v1_1/fadeniyi/image/upload", imageFile)
             let imageLink = uploadedImage.data.url;
-            if (localStorage.getItem('Products')&& JSON.parse(localStorage.getItem('Products')).length) {
+            if (localStorage.getItem('Products') && JSON.parse(localStorage.getItem('Products')).length) {
                 let products = JSON.parse(localStorage.getItem('Products'));
                 const newId = products[products.length - 1].id + 1;
                 products.push(Object.assign({ image: imageLink }, { name: data.name, price: data.price, description: data.description, id: newId }))
@@ -46,34 +47,39 @@ const AddProducts = (props) => {
             }
 
         } else {
-            if (localStorage.getItem('Products')&& JSON.parse(localStorage.getItem('Products')).length) {
+            if (localStorage.getItem('Products') && JSON.parse(localStorage.getItem('Products')).length) {
                 let products = JSON.parse(localStorage.getItem('Products'));
                 const newId = products[products.length - 1].id + 1;
-                products.push(Object.assign({ id: newId }, {...data }))
+                products.push(Object.assign({ id: newId }, { ...data }))
                 localStorage.setItem('Products', JSON.stringify(products))
                 updateList(JSON.parse(localStorage.getItem('Products')))
 
             }
             else {
                 const id = 0;
-                newProduct.push(Object.assign({ id: id }, {...data }))
+                newProduct.push(Object.assign({ id: id }, { ...data }))
                 localStorage.setItem('Products', JSON.stringify(newProduct))
                 updateList(JSON.parse(localStorage.getItem('Products')))
 
             }
         }
     }
+    let activeState='addProduct'
     return (
-        <div className='my-5 py-5'>
-            <Container>
-                <div className='my-3 py-3 w-80 mx-auto '>
-                    <ProductForm storeProduct={storeProduct} />
-                    <div className='mt-5'>
-                        <ProductTable productList={productList} removeProduct={removeProduct} />
+        <>
+            <Header activeState={activeState} />
+            <div className='my-5 py-5'>
+                <Container>
+                    <div className='my-3 py-3 w-80 mx-auto '>
+                        <ProductForm storeProduct={storeProduct} />
+                        <div className='mt-5'>
+                            <ProductTable productList={productList} removeProduct={removeProduct} />
+                        </div>
                     </div>
-                </div>
-            </Container>
-        </div >
+                </Container>
+            </div >
+        </>
+
     )
 }
 

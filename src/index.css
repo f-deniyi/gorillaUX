@@ -24,23 +24,26 @@ code {
   content: "";
   display: block;
   height: 3px;
-  top:2.2em;
+  top:3.5em;
   position: absolute;
-  width: 100%;
+  width: 80%;
 }
 .active:hover{
   text-decoration: none;
 }
 
 .no-product-container{
-  position:absolute;
+  position:relative;
   height:100vh;
+  width: 100%;
   text-align: center;
 }
 .no-product{
-  position:relative;
-  top:45%;
-  left:110%;
+  position:absolute;
+  margin:0;
+  width: 100%;
+  top:50%;
+left:50%;
   transform: translate(-50%,-50%);
 }
 
@@ -55,4 +58,12 @@ code {
 a{
   color:black !important;
   text-decoration: none;
+}
+@media screen and (max-width:700px){
+  .active{
+    border-bottom:#007bff 2px solid ;
+  }
+  .active:after {
+    all: unset;
+  }
 }

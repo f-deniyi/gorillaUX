@@ -5,7 +5,7 @@ const NoProduct = () => {
     return (
         <div className='no-product-container'>
             <div className='no-product'>
-                <h1>No Product has been addded</h1>
+                <h1>No Product has been added</h1>
                 <NavLink to='/addProduct'>
                     <Button color='primary' className='btn-primary'>
                         Add Product

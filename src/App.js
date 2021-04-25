@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Router>
-      <Header />
+      
         <Switch>
           <Route path='/' exact component={Products} />
           <Route path='/addProduct' exact component={AddProduct} />
