@@ -5,7 +5,7 @@ import ProductList from '../components/ProductList';
 
 
 const Products = () => {
-    console.log(JSON.parse(localStorage.getItem('Products')).length)
+    
     return (
         <div className='mt-5 pt-5'>
             <Col className='mt-3 pt-3'>
