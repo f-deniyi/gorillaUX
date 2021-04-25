@@ -69,11 +69,11 @@ const Header = (props) => {
 
     return (
         <div>
-            <Navbar className='fixed-top bg-white border-bottom' light expand="md">
-                <NavbarBrand href="/"> <img src={logo} width="50" height="50" alt="" /></NavbarBrand>
+            <Navbar className='fixed-top bg-white border-bottom px-5' light expand="md">
+                <NavbarBrand href="/"> <img src={logo} width="50" height="50" alt="" className='mr-4' /></NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
+                    <Nav className="mr-auto ml-2" navbar>
                         <NavItem>
                             <NavLink
                                 href="/"
