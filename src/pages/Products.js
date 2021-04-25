@@ -6,7 +6,7 @@ import Header from '../components/Header';
 
 
 const Products = () => {
-    let activeState='product'
+    let activeState='product';
     return (
         <>
         <Header activeState={activeState}/>
